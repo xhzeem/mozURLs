@@ -56,7 +56,7 @@ func main() {
         json.Unmarshal(results, &pages)
 
         for _, page := range pages {
-            fmt.Println(page["page"])
+            fmt.Println("http://" + page["page"])
         }
                 
         nextToken = data["next_token"].(string)
